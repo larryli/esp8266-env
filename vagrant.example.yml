@@ -1,0 +1,30 @@
+# Are we need check box updates for every 'vagrant up'?
+box_check_update: false
+
+# Virtual machine name
+machine_name: esp8266-env
+
+# Virtual machine CPU cores number
+cpus: 2
+
+# Virtual machine RAM
+memory: 2048
+
+# Apt source mirror, keep empty if not
+# Must edit this on the `vagrant.yml` file before `vagrant up`
+# Use `mirrors.aliyun.com` or `mirrors.tuna.tsinghua.edu.cn` for China
+apt_source:
+
+# Pip mirror, keep empty if not
+# Must edit this on the `vagrant.yml` file before `vagrant up`
+# Use `https://pypi.doubanio.com/simple/` or `https://pypi.tuna.tsinghua.edu.cn/simple/` for China
+pip_simple:
+
+# Please use your esp device id, run `VBoxManage.exe list usbhost` list devices
+usbfilters:
+  - name: cp210x
+    vendorid: 10c4
+    productid: ea60
+  - name: pl2303
+    vendorid: 067b
+    productid: "2303"

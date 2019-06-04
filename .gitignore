@@ -1,0 +1,9 @@
+*
+!.gitignore
+!.gitmodules
+!ESP8266_RTOS_SDK
+!LICENSE
+!README-CN.md
+!README.md
+!vagrant.example.yml
+!Vagrantfile
